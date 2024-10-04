@@ -1,0 +1,82 @@
+/* กำหนดสีพื้นหลังให้กับ body */
+body {
+    background-color: #8f8f8f; /* สีเทาอ่อน */
+    margin: 0; /* ลบระยะห่างรอบๆ */
+    font-family: Arial, sans-serif; /* กำหนดฟอนต์ */
+}
+
+/* จัดการสไตล์ของ header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(63, 63, 63);
+    padding: 10px;
+}
+
+/* สไตล์ของ h1 */
+header h1 {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+}
+
+/* สไตล์ของเมนูนำทาง */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* สไตล์ของภาพใน cover */
+/* สไตล์ของภาพใน cover */
+.cover {
+    display: flex;
+    flex-direction: column; /* เปลี่ยนเป็นแนวตั้ง */
+    align-items: center; /* จัดกลางแนวนอน */
+    margin-top: 20px; /* ระยะห่างจาก header */
+}
+
+/* สไตล์ของภาพ */
+.cover img {
+    max-width: 80%; /* กำหนดขนาดสูงสุดของภาพ */
+    height: auto; /* ให้รักษาสัดส่วนของภาพ */
+}
+
+/* สไตล์ของข้อความ overlay */
+.text-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* จัดกึ่งกลางในแนวนอน */
+    background-color: rgba(255, 255, 255, 0.8); /* สีพื้นหลังพร้อมความโปร่งแสง */
+    color: black; /* สีตัวอักษรเป็นสีดำ */
+    padding: 15px; /* ระยะห่างภายใน */
+    text-align: left; /* จัดข้อความชิดซ้าย */
+    margin-top: 20px; /* ระยะห่างด้านบน */
+    border-radius: 10px; /* มุมโค้งมน */
+    font-size: 24px; /* ขนาดตัวอักษร */
+    width: 78%; /* ความกว้าง 50% ของพื้นที่ */
+    margin-left: auto;
+    margin-right: auto; /* จัดกึ่งกลางในแนวนอน */
+}
+
+.text-overlay img {
+    margin-right: 20px; /* เพิ่มระยะห่างระหว่างรูปภาพและข้อความ */
+}
